@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <div class="form-container">
+        <form id="form">
+            <div class="form-group">
+                <label for="name" id="label-name">Name</label><br>
+                <input type="text" id="name" placeholder="Enter your name"/>
+            </div>
+
+            <div class="form-group">
+                <label for="age" id="label-age">Age</label><br>
+                <input type="text" id="age" placeholder="Enter your age"/>
+            </div>
+
+            <div class="form-group">
+                <label id="label-role">Which option best describes you?</label><br>
+                <input type="radio" id="student" name="role" value="student">
+                <label for="student">Student</label><br>
+
+                <input type="radio" id="intern" name="role" value="intern">
+                <label for="intern">Intern</label><br>
+
+                <input type="radio" id="professional" name="role" value="professional">
+                <label for="professional">Professional</label><br>
+
+                <input type="radio" id="other" name="role" value="other">
+                <label for="other">Other</label>
+            </div>
+
+            <div class="form-group">
+                <label>Languages and Frameworks Known <small>(Check all that apply)</small></label><br>
+                <label><input type="checkbox" name="inp"> C</label>
+                <label><input type="checkbox" name="inp"> C++</label>
+                <label><input type="checkbox" name="inp"> C#</label>
+                <label><input type="checkbox" name="inp"> Java</label>
+                <label><input type="checkbox" name="inp"> Python</label>
+                <label><input type="checkbox" name="inp"> JavaScript</label>
+                <label><input type="checkbox" name="inp"> React</label>
+                <label><input type="checkbox" name="inp"> Angular</label>
+                <label><input type="checkbox" name="inp"> Django</label>
+                <label><input type="checkbox" name="inp"> Spring</label>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" value="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
